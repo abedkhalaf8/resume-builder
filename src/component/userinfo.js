@@ -1,16 +1,16 @@
 import jsPDF from "jspdf";
 import { useState } from "react";
 
-function UserInfo() 
+function UserInfo() {
     const [fName, setFname] = useState('');
     const [lName, setLname] = useState('');
-    const [role, setRole] = useState(' ');
+    const [role, setRole] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [github, setGithub] = useState('');
     const [linkedin, setLinkedin] = useState('');
     const [aboutU, setAboutU] = useState('');
-    const [education, setEducation] = useState(' );
+    const [education, setEducation] = useState('');
     const [experience, setExperience] = useState('');
     const [technical, setTechnical] = useState('');
     const [languages, setLanguages] = useState('');
@@ -18,7 +18,6 @@ function UserInfo()
   
     const generateCV = () => {
       const doc = new jsPDF();
-
       // header title
       doc.setFontSize(13);
       doc.text(10, 15, `${fName} ${lName} – ${role}`);

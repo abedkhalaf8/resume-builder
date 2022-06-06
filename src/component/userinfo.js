@@ -17,9 +17,8 @@ function UserInfo() {
     const [volunteering, setVolunteering] = useState('');
   
     const generateCV = () => {
-      var doc = new jsPDF('p', 'pt', 'a4');
-      doc.text(20, 20, fName)
-      doc.addFont('helvetica', 'normal')
+      const doc = new jsPDF();
+      doc.text(10,10, fName);
       doc.text(20, 40, lName);
       doc.text(20, 60, role); 
       doc.text(20, 80, email);  
@@ -32,10 +31,9 @@ function UserInfo() {
       doc.text(20, 220, technical);  
       doc.text(20, 240, languages);  
       doc.text(20, 260, volunteering); 
-      doc.save(`${fName}_Cv.pdf`);
+      doc.save(`${fName}_cv.pdf`);
     }
     
-
     return (
       <div className="UserInfo">
       <div>

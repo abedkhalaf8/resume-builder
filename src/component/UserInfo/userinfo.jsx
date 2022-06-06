@@ -53,9 +53,9 @@ function UserInfo() {
      
       // personal information
       doc.setFontSize(7);
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 25, "Personal Information");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
 
       doc.text(10, 35, `Email: ${email}`);  
       doc.text(10, 40, `Phone number: ${phone}`);  
@@ -63,42 +63,42 @@ function UserInfo() {
       doc.text(10, 50, `Linkedin: ${linkedin}`);  
 
      // introduction
-     doc.setFont('Lato-Regular', 'bold');
+    //  doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 75, "Introduction");
       doc.text(10, 85, aboutU);  
       
       // education
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 103, "Education ");
       doc.text(10, 113, education);  
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
 
 
       // experience
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 127, "Experience ");
       doc.text(10, 137, experience);  
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
 
 
       // technical
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 220, "Technical ");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
       doc.text(10, 225, technical);  
 
 
       // languages
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 240, "Languages ");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
       doc.text(10, 245, languages);  
 
 
       // volunteering
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 260, "Volunteering");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('normal');
       doc.text(10, 265, volunteering); 
       doc.save(`${fName}_cv.pdf`)
     }

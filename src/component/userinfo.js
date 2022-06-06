@@ -15,7 +15,7 @@ function UserInfo() {
     const [technical, setTechnical] = useState('');
     const [languages, setLanguages] = useState('');
     const [volunteering, setVolunteering] = useState('');
-  
+
     const generateCV = () => {
       const doc = new jsPDF();
       // header title
@@ -24,35 +24,54 @@ function UserInfo() {
      
       // personal information
       doc.setFontSize(7);
+      doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 25, "Personal Information");
-      doc.text(10, 40, `Email: ${email}`);  
-      doc.text(10, 47, `Phone number: ${phone}`);  
-      doc.text(10, 54, `Github: ${github}`);  
-      doc.text(10, 61, `Linkedin: ${linkedin}`);  
+      doc.setFont('Lato-Regular', 'normal');
+
+      doc.text(10, 35, `Email: ${email}`);  
+      doc.text(10, 40, `Phone number: ${phone}`);  
+      doc.text(10, 45, `Github: ${github}`);  
+      doc.text(10, 50, `Linkedin: ${linkedin}`);  
 
      // introduction
+     doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 75, "Introduction");
       doc.text(10, 85, aboutU);  
       
       // education
+      doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 103, "Education ");
       doc.text(10, 113, education);  
+      doc.setFont('Lato-Regular', 'normal');
+
 
       // experience
+      doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 127, "Experience ");
       doc.text(10, 137, experience);  
+      doc.setFont('Lato-Regular', 'normal');
+
 
       // technical
-      doc.text(10, 151, "Technical ");
-      doc.text(10, 161, technical);  
+      doc.setFont('Lato-Regular', 'bold');
+      doc.text(10, 220, "Technical ");
+      doc.setFont('Lato-Regular', 'normal');
+      doc.text(10, 225, technical);  
+
 
       // languages
-      doc.text(10, 175, "Languages ");
-      doc.text(10, 185, languages);  
+      doc.setFont('Lato-Regular', 'bold');
+      doc.text(10, 240, "Languages ");
+      doc.setFont('Lato-Regular', 'normal');
+      doc.text(10, 245, languages);  
+
 
       // volunteering
-      doc.text(10, 199, "Volunteering");
-      doc.text(10, 309, volunteering); 
+      doc.setFont('Lato-Regular', 'bold');
+      doc.text(10, 260, "Volunteering");
+      doc.setFont('Lato-Regular', 'normal');
+      doc.text(10, 265, volunteering); 
+
       doc.save(`${fName}_cv.pdf`)
     }
     

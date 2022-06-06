@@ -1,6 +1,13 @@
 import jsPDF from "jspdf";
 import { useState } from "react";
 
+//? what remaining to do -->
+//& 1- education inputs add maybe list
+//& 2- Experience inputs
+//& 3- Technical Skills: 
+//& 4- languages
+//& 5- volunteering
+
 function UserInfo() {
     const [fName, setFname] = useState('');
     const [lName, setLname] = useState('');
@@ -16,7 +23,29 @@ function UserInfo() {
     const [languages, setLanguages] = useState('');
     const [volunteering, setVolunteering] = useState('');
 
-    const generateCV = () => {
+    const CheckInputs = () => {
+      let notEmpty = 0;
+          if(fName !== ''){notEmpty++};
+          if(lName !== ''){notEmpty++};
+          if(role !== ''){notEmpty++};     
+          if(email !== ''){notEmpty++};
+          if(phone !== ''){notEmpty++};  
+          if(github !== ''){notEmpty++};  
+          if(linkedin !== ''){notEmpty++};    
+          if(aboutU !== ''){notEmpty++};      
+          if(education !== ''){notEmpty++};    
+          if(experience !== ''){notEmpty++};     
+          if(technical !== ''){notEmpty++};       
+          if(languages !== ''){notEmpty++};       
+          if(volunteering !== ''){notEmpty++};     
+          if(notEmpty === 13 ){
+            return(false);
+          } else { 
+            return(true);
+        }
+      }
+
+      const generateCV = () => {
       const doc = new jsPDF();
       // header title
       doc.setFontSize(13);
@@ -71,15 +100,22 @@ function UserInfo() {
       doc.text(10, 260, "Volunteering");
       doc.setFont('Lato-Regular', 'normal');
       doc.text(10, 265, volunteering); 
-
       doc.save(`${fName}_cv.pdf`)
     }
+    
+
+
+
     
     return (
       <div className="UserInfo">
       <div>
         <label>First Name: </label>
-        <input type="text" onChange={(e) => setFname(e.target.value)} placeholder="Abed"/>
+        <input type="text" onChange={(e) => {
+          setFname(e.target.value)
+          CheckInputs()
+        } }
+        placeholder="Abed"/>
       </div>
       <div>
         <label>Last Name : </label>
@@ -130,7 +166,7 @@ function UserInfo() {
         <input type="text" onChange={(e) => setVolunteering(e.target.value)}/>
       </div>
       <div className="btn">
-          <button type="button" onClick={generateCV}>generate your cv</button>
+          <button type="button" onClick={generateCV} disabled={CheckInputs()}>generate your cv</button>
       </div>
       </div>
     );

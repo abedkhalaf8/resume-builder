@@ -1,4 +1,6 @@
-import Homepage from './component/homepage'
+import Homepage from './HomePage/homepage'
+
+// add routes for the pages 
 function App() {
   return (
     <div className="App">

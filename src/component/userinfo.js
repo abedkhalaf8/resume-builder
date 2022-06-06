@@ -1,16 +1,16 @@
 import jsPDF from "jspdf";
 import { useState } from "react";
 
-function UserInfo() {
+function UserInfo() 
     const [fName, setFname] = useState('');
     const [lName, setLname] = useState('');
-    const [role, setRole] = useState('');
+    const [role, setRole] = useState(' ');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [github, setGithub] = useState('');
     const [linkedin, setLinkedin] = useState('');
     const [aboutU, setAboutU] = useState('');
-    const [education, setEducation] = useState('');
+    const [education, setEducation] = useState(' );
     const [experience, setExperience] = useState('');
     const [technical, setTechnical] = useState('');
     const [languages, setLanguages] = useState('');
@@ -18,20 +18,42 @@ function UserInfo() {
   
     const generateCV = () => {
       const doc = new jsPDF();
-      doc.text(10,10, fName);
-      doc.text(20, 40, lName);
-      doc.text(20, 60, role); 
-      doc.text(20, 80, email);  
-      doc.text(20, 100, phone);  
-      doc.text(20, 120, github);  
-      doc.text(20, 140, linkedin);  
-      doc.text(20, 160, education);  
-      doc.text(20, 180, aboutU);  
-      doc.text(20, 200, experience);  
-      doc.text(20, 220, technical);  
-      doc.text(20, 240, languages);  
-      doc.text(20, 260, volunteering); 
-      doc.save(`${fName}_cv.pdf`);
+
+      // header title
+      doc.setFontSize(13);
+      doc.text(10, 15, `${fName} ${lName} – ${role}`);
+     
+      // personal information
+      doc.setFontSize(7);
+      doc.text(10, 25, "Personal Information");
+      doc.text(10, 40, `Email: ${email}`);  
+      doc.text(10, 47, `Phone number: ${phone}`);  
+      doc.text(10, 54, `Github: ${github}`);  
+      doc.text(10, 61, `Linkedin: ${linkedin}`);  
+
+     // introduction
+      doc.text(10, 75, "Introduction");
+      doc.text(10, 85, aboutU);  
+      
+      // education
+      doc.text(10, 103, "Education ");
+      doc.text(10, 113, education);  
+
+      // experience
+      doc.text(10, 127, "Experience ");
+      doc.text(10, 137, experience);  
+
+      // technical
+      doc.text(10, 151, "Technical ");
+      doc.text(10, 161, technical);  
+
+      // languages
+      doc.text(10, 175, "Languages ");
+      doc.text(10, 185, languages);  
+
+      // volunteering
+      doc.text(10, 199, "Volunteering");
+      doc.text(10, 309, volunteering); 
     }
     
     return (

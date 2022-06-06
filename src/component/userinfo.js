@@ -60,31 +60,31 @@ function UserInfo() {
       <div className="UserInfo">
       <div>
         <label>First Name: </label>
-        <input type="text" onChange={(e) => setFname(e.target.value)}/>
+        <input type="text" onChange={(e) => setFname(e.target.value)} placeholder="Abed"/>
       </div>
       <div>
         <label>Last Name : </label>
-        <input type="text" onChange={(e) => setLname(e.target.value)} />
+        <input type="text" onChange={(e) => setLname(e.target.value)}  placeholder="Khalaf" />
       </div>
       <div>
         <label>Role: </label>
-        <input type="text" onChange={(e) => setRole(e.target.value)} />
+        <input type="text" onChange={(e) => setRole(e.target.value)}  placeholder="Web Developer"/>
       </div>
       <div>
         <label>Email: </label>
-        <input type="text" onChange={(e) => setEmail(e.target.value)} />
+        <input type="text" onChange={(e) => setEmail(e.target.value)} placeholder="example@gmail.com"/>
       </div>
       <div>
         <label>Phone: </label>
-        <input type="text" onChange={(e) => setPhone(e.target.value)} />
+        <input type="text" onChange={(e) => setPhone(e.target.value)}  placeholder="0500000000"/>
       </div>
       <div>
         <label>Github Link: </label>
-        <input type="text" onChange={(e) => setGithub(e.target.value)} />
+        <input type="text" onChange={(e) => setGithub(e.target.value)}  placeholder="github.com/example"/>
       </div>
       <div>
         <label>Linkedin Link: </label>
-        <input type="text" onChange={(e) => setLinkedin(e.target.value)} />
+        <input type="text" onChange={(e) => setLinkedin(e.target.value)} placeholder="linkedin.com/in/example"/>
       </div>
       <div>
         <label>About Yourself: </label>
@@ -104,7 +104,7 @@ function UserInfo() {
       </div>
       <div>
         <label>Languages: </label>
-        <input type="text" onChange={(e) => setLanguages(e.target.value)} />
+        <input type="text" onChange={(e) => setLanguages(e.target.value)} placeholder="English, Arabic, Hebrew"/>
       </div>
       <div>
         <label>Volunteering: </label>

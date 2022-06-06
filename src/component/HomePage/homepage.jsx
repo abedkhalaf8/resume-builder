@@ -1,6 +1,4 @@
 import UserInfo from "../UserInfo/userinfo"
-import { useState } from "react";
-
 function Homepage() {
   const RelevantData = '2022';
   return (

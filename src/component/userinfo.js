@@ -53,6 +53,7 @@ function UserInfo() {
       // volunteering
       doc.text(10, 199, "Volunteering");
       doc.text(10, 309, volunteering); 
+      doc.save(`${fName}_cv.pdf`)
     }
     
     return (

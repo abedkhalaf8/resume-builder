@@ -1,6 +1,13 @@
 import jsPDF from "jspdf";
 import { useState } from "react";
 
+//? what remaining to do -->
+//& 1- education inputs add maybe list
+//& 2- Experience inputs
+//& 3- Technical Skills: 
+//& 4- languages
+//& 5- volunteering
+
 function UserInfo() {
     const [fName, setFname] = useState('');
     const [lName, setLname] = useState('');
@@ -16,7 +23,29 @@ function UserInfo() {
     const [languages, setLanguages] = useState('');
     const [volunteering, setVolunteering] = useState('');
 
-    const generateCV = () => {
+    const CheckInputs = () => {
+      let notEmpty = 0;
+          if(fName !== ''){notEmpty++};
+          if(lName !== ''){notEmpty++};
+          if(role !== ''){notEmpty++};     
+          if(email !== ''){notEmpty++};
+          if(phone !== ''){notEmpty++};  
+          if(github !== ''){notEmpty++};  
+          if(linkedin !== ''){notEmpty++};    
+          if(aboutU !== ''){notEmpty++};      
+          if(education !== ''){notEmpty++};    
+          if(experience !== ''){notEmpty++};     
+          if(technical !== ''){notEmpty++};       
+          if(languages !== ''){notEmpty++};       
+          if(volunteering !== ''){notEmpty++};     
+          if(notEmpty === 13 ){
+            return(false);
+          } else { 
+            return(true);
+        }
+      }
+
+      const generateCV = () => {
       const doc = new jsPDF();
       // header title
       doc.setFontSize(13);
@@ -24,9 +53,9 @@ function UserInfo() {
      
       // personal information
       doc.setFontSize(7);
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 25, "Personal Information");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
 
       doc.text(10, 35, `Email: ${email}`);  
       doc.text(10, 40, `Phone number: ${phone}`);  
@@ -34,52 +63,59 @@ function UserInfo() {
       doc.text(10, 50, `Linkedin: ${linkedin}`);  
 
      // introduction
-     doc.setFont('Lato-Regular', 'bold');
+    //  doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 75, "Introduction");
       doc.text(10, 85, aboutU);  
       
       // education
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 103, "Education ");
       doc.text(10, 113, education);  
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
 
 
       // experience
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 127, "Experience ");
       doc.text(10, 137, experience);  
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
 
 
       // technical
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 220, "Technical ");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
       doc.text(10, 225, technical);  
 
 
       // languages
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 240, "Languages ");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('Lato-Regular', 'normal');
       doc.text(10, 245, languages);  
 
 
       // volunteering
-      doc.setFont('Lato-Regular', 'bold');
+      // doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 260, "Volunteering");
-      doc.setFont('Lato-Regular', 'normal');
+      // doc.setFont('normal');
       doc.text(10, 265, volunteering); 
-
       doc.save(`${fName}_cv.pdf`)
     }
+    
+
+
+
     
     return (
       <div className="UserInfo">
       <div>
         <label>First Name: </label>
-        <input type="text" onChange={(e) => setFname(e.target.value)} placeholder="Abed"/>
+        <input type="text" onChange={(e) => {
+          setFname(e.target.value)
+          CheckInputs()
+        } }
+        placeholder="Abed"/>
       </div>
       <div>
         <label>Last Name : </label>
@@ -130,7 +166,7 @@ function UserInfo() {
         <input type="text" onChange={(e) => setVolunteering(e.target.value)}/>
       </div>
       <div className="btn">
-          <button type="button" onClick={generateCV}>generate your cv</button>
+          <button type="button" onClick={generateCV} disabled={CheckInputs()}>generate your cv</button>
       </div>
       </div>
     );

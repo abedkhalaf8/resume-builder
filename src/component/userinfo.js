@@ -2,23 +2,22 @@ import jsPDF from "jspdf";
 import { useState } from "react";
 
 function UserInfo() {
-    const [fName, setFname] = useState('abed');
-    const [lName, setLname] = useState('Khalaf');
-    const [role, setRole] = useState('Web Developer');
-    const [email, setEmail] = useState('Kfabdall@gmail.com');
-    const [phone, setPhone] = useState('050000000');
-    const [github, setGithub] = useState('gtihub.com/abed');
-    const [linkedin, setLinkedin] = useState('linkedin.com/abed');
-    const [aboutU, setAboutU] = useState('i love coding');
-    const [education, setEducation] = useState('Open uni');
-    const [experience, setExperience] = useState('gas station');
-    const [technical, setTechnical] = useState('c#');
-    const [languages, setLanguages] = useState('arabic');
-    const [volunteering, setVolunteering] = useState('i didn');
+    const [fName, setFname] = useState('');
+    const [lName, setLname] = useState('');
+    const [role, setRole] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [github, setGithub] = useState('');
+    const [linkedin, setLinkedin] = useState('');
+    const [aboutU, setAboutU] = useState('');
+    const [education, setEducation] = useState('');
+    const [experience, setExperience] = useState('');
+    const [technical, setTechnical] = useState('');
+    const [languages, setLanguages] = useState('');
+    const [volunteering, setVolunteering] = useState('');
   
     const generateCV = () => {
       const doc = new jsPDF();
-
       // header title
       doc.setFontSize(13);
       doc.text(10, 15, `${fName} ${lName} – ${role}`);

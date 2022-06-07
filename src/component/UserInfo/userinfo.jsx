@@ -28,6 +28,37 @@ function UserInfo() {
         counter
       );
     }
+
+    const fillTheFields = () => {
+     setFname('Abed')
+     setLname('Khalaf')
+     setRole('Web Developer')
+     setEmail('example@example.com')
+     setPhone('0500000000')
+     setGithub('https://github.com/abedkhalaf8')
+     setLinkedin('https://il.linkedin.com/in/example')
+     setAboutU('')
+     setEducation('2021-2022: Full-Stack Bootcamp, Appleseeds.\nAn intensive 6-months, 720 hours training program that encourages self-led learning and group')
+     setExperience('abed')
+     setTechnical('Front end: HTML5, CSS, JavaScript, ReactJs')
+     setLanguages('English: Advanced| Hebrew: Fluent | Arabic: Native')
+     setVolunteering('abed')
+    }
+    const emptyTheFields = () => {
+      setFname("")
+      setLname("")
+      setRole("")
+      setEmail("")
+      setPhone("")
+      setGithub("")
+      setLinkedin("")
+      setAboutU("")
+      setEducation("")
+      setExperience("")
+      setTechnical("")
+      setLanguages("")
+      setVolunteering("")
+     }
     
     const CheckInputs = () => {
       let notEmpty = 0;
@@ -112,61 +143,63 @@ function UserInfo() {
     
     return (
       <div className="UserInfo">
+         <div className="btn1">
+          <button type="button" onClick={fillTheFields}>Fill Inputs Example</button>
+      </div>
+      <div className="btn2">
+          <button type="button" onClick={emptyTheFields}>Blank Inputs</button>
+      </div>
       <div>
         <label>First Name: </label>
-        <input type="text" onChange={(e) => {
-          setFname(e.target.value)
-          CheckInputs()
-        } }
-        placeholder="Abed"/>
+        <input type="text" onChange={(e) => { setFname(e.target.value)}}  placeholder="Abed" value={fName}  />
       </div>
       <div>
         <label>Last Name : </label>
-        <input type="text" onChange={(e) => setLname(e.target.value)}  placeholder="Khalaf" />
+        <input type="text" onChange={(e) => setLname(e.target.value)}  placeholder="Khalaf"  value={lName} />
       </div>
       <div>
         <label>Role: </label>
-        <input type="text" onChange={(e) => setRole(e.target.value)}  placeholder="Web Developer"/>
+        <input type="text" onChange={(e) => setRole(e.target.value)}  placeholder="Web Developer"  value={role} />
       </div>
       <div>
         <label>Email: </label>
-        <input type="text" onChange={(e) => setEmail(e.target.value)} placeholder="example@gmail.com"/>
+        <input type="text" onChange={(e) => setEmail(e.target.value)} placeholder="example@gmail.com"  value={email} />
       </div>
       <div>
         <label>Phone: </label>
-        <input type="text" onChange={(e) => setPhone(e.target.value)}  placeholder="0500000000"/>
+        <input type="text" onChange={(e) => setPhone(e.target.value)}  placeholder="0500000000"  value={phone} />
       </div>
       <div>
         <label>Github Link: </label>
-        <input type="text" onChange={(e) => setGithub(e.target.value)}  placeholder="github.com/example"/>
+        <input type="text" onChange={(e) => setGithub(e.target.value)}  placeholder="github.com/example"  value={github} />
       </div>
       <div>
         <label>Linkedin Link: </label>
-        <input type="text" onChange={(e) => setLinkedin(e.target.value)} placeholder="linkedin.com/in/example"/>
+        <input type="text" onChange={(e) => setLinkedin(e.target.value)} placeholder="linkedin.com/in/example"  value={linkedin} />
       </div>
       <div>
         <label>About Yourself: </label>
-        <input type="text" onChange={(e) => setAboutU(e.target.value)} />
+        <input type="text" onChange={(e) => setAboutU(e.target.value)}   value={fName} />
       </div>
       <div>
         <label>Education: </label>
-        <input type="text" onChange={(e) => setEducation(e.target.value)} />
+        <input type="text" onChange={(e) => setEducation(e.target.value)}   value={education} />
       </div>
       <div>
         <label>Experience: </label>
-        <input type="text" onChange={(e) => setExperience(e.target.value)} />
+        <input type="text" onChange={(e) => setExperience(e.target.value)}   value={fName} />
       </div>
       <div>
         <label>Technical Skills: </label>
-        <input type="text" onChange={(e) => setTechnical(e.target.value)} />
+        <input type="text" onChange={(e) => setTechnical(e.target.value)}   value={technical} />
       </div>
       <div>
         <label>Languages: </label>
-        <input type="text" onChange={(e) => setLanguages(e.target.value)} placeholder="English, Arabic, Hebrew"/>
+        <input type="text" onChange={(e) => setLanguages(e.target.value)} placeholder="English, Arabic, Hebrew"  value={languages} />
       </div>
       <div>
         <label>Volunteering: </label>
-        <input type="text" onChange={(e) => setVolunteering(e.target.value)}/>
+        <input type="text" onChange={(e) => setVolunteering(e.target.value)}  value={fName} />
       </div>
       <div className="btn">
           <button type="button" onClick={generateCV} disabled={CheckInputs()}>generate your cv</button>

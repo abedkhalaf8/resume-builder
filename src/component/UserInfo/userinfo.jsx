@@ -28,7 +28,7 @@ function UserInfo() {
         counter
       );
     }
-
+    
     const fillTheFields = () => {
      setFname('Abed')
      setLname('Khalaf')
@@ -37,12 +37,12 @@ function UserInfo() {
      setPhone('0500000000')
      setGithub('https://github.com/abedkhalaf8')
      setLinkedin('https://il.linkedin.com/in/example')
-     setAboutU('')
-     setEducation('2021-2022: Full-Stack Bootcamp, Appleseeds.\nAn intensive 6-months, 720 hours training program that encourages self-led learning and group')
-     setExperience('abed')
+     setAboutU('Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze ')
+     setEducation('2021-2022: Full-Stack Bootcamp, Appleseeds.\n• An intensive 6-months, 720 hours training program that encourages self-led learning and group')
+     setExperience('2016-2021: Graphic Design')
      setTechnical('Front end: HTML5, CSS, JavaScript, ReactJs')
      setLanguages('English: Advanced| Hebrew: Fluent | Arabic: Native')
-     setVolunteering('abed')
+     setVolunteering('tijnse literatuur uit sinia, heeft één van de meer obscure latijnse woorden, consect');
     }
     const emptyTheFields = () => {
       setFname("")
@@ -75,7 +75,7 @@ function UserInfo() {
           if(technical !== ''){notEmpty++};       
           if(languages !== ''){notEmpty++};       
           if(volunteering !== ''){notEmpty++};     
-          if(notEmpty === 13 ){
+          if(notEmpty === 13){
             return(false);
           } else { 
             return(true);
@@ -179,7 +179,7 @@ function UserInfo() {
       </div>
       <div>
         <label>About Yourself: </label>
-        <input type="text" onChange={(e) => setAboutU(e.target.value)}   value={fName} />
+        <input type="text" onChange={(e) => setAboutU(e.target.value)}   value={aboutU} />
       </div>
       <div>
         <label>Education: </label>
@@ -187,7 +187,7 @@ function UserInfo() {
       </div>
       <div>
         <label>Experience: </label>
-        <input type="text" onChange={(e) => setExperience(e.target.value)}   value={fName} />
+        <input type="text" onChange={(e) => setExperience(e.target.value)}   value={experience} />
       </div>
       <div>
         <label>Technical Skills: </label>
@@ -199,7 +199,7 @@ function UserInfo() {
       </div>
       <div>
         <label>Volunteering: </label>
-        <input type="text" onChange={(e) => setVolunteering(e.target.value)}  value={fName} />
+        <input type="text" onChange={(e) => setVolunteering(e.target.value)}  value={volunteering} />
       </div>
       <div className="btn">
           <button type="button" onClick={generateCV} disabled={CheckInputs()}>generate your cv</button>

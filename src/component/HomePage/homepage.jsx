@@ -1,6 +1,7 @@
 function HomePage() {
-    
- //& update the relevantData if the cv is still relevant to the current year.  
+
+
+ //& at the end not right now 
 const RelevantData = '2022';
   return (
     <div className="HomePage">
@@ -18,7 +19,6 @@ const RelevantData = '2022';
               github link for the project repo
             </div>
        </header>
-            
                  {/* link to  resumepage.jsx*/}
             <div className="EnterResumePage">
                Enter Resume Page 

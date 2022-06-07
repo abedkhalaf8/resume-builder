@@ -2,13 +2,6 @@
 import jsPDF from "jspdf";
 import { useState } from "react";
 
-//? what remaining to do -->
-//& 1- education inputs add maybe list
-//& 2- Experience inputs
-//& 3- Technical Skills: 
-//& 4- languages
-//& 5- volunteering
-
 function UserInfo() {
     const [fName, setFname] = useState('');
     const [lName, setLname] = useState('');

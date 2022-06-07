@@ -13,7 +13,9 @@ const RelevantData = '2022';
                        Downloads Stats
                   </div>
                   <div className="GitHubRepoLink">
-                       github link for the project repo
+                       <a href="https://github.com/abedkhalaf8/resume-builder" target="_blank" rel="noopener noreferrer">
+                       <label class="fa fa-github" style={{fontSize:"20px"}}> Website Project</label>
+                       </a>
                   </div>
             </header>
             <main>

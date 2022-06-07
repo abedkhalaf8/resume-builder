@@ -2,4 +2,4 @@
 # appleseeds bootcamp
 
 
-[netlify](https://tech-cvbuilder.netlify.app/)
+[netlify](https://resume-cv-builder.netlify.app/)

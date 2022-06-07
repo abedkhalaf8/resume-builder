@@ -1,3 +1,5 @@
+import './resumepage.css';
+
 import { Link } from "react-router-dom";
 import UserInfo from "../UserInfo/userinfo";
 function ResumePage() {
@@ -5,7 +7,7 @@ function ResumePage() {
     <div className="HomePage">
         <header>
               <div className="Home">
-                 <Link to="/">Home</Link>
+                 <Link to="/" className="HomePage">Home</Link>
               </div>
        </header>
        <main>

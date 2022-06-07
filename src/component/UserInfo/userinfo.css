@@ -1,0 +1,12 @@
+.Info label {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+.Info {
+    background-color: bisque;
+}
+
+.header {
+      display: flex;
+      
+}

@@ -1,7 +1,6 @@
 import HomePage from './HomePage/homepage';
 import ResumePage from './ResumePage/resumepage'
 
-//& add routes for the pages 
 function App() {
   return (
     <div className="App">
@@ -20,6 +19,12 @@ export default App;
 //& 2- finish styling the pdf curretly 
 //& 3- split component curretly ✅
 
+//? what remaining to do -->
+//& 1- education inputs add maybe list
+//& 2- Experience inputs
+//& 3- Technical Skills: 
+//& 4- languages
+//& 5- volunteering
 
 //& EXTRA
 //? add homepage

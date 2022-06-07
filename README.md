@@ -22,5 +22,5 @@ i tried to make it easier and faster for those who want to apply for tech jobs. 
 1_ReactJS <br />
  
  
-**- Netlify Link For the project**
+**lify Link For the project**
 [Resume Cv Builder](https://resume-cv-builder.netlify.app/)

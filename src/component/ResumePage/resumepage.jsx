@@ -1,12 +1,12 @@
+import { Link } from "react-router-dom";
 import UserInfo from "../UserInfo/userinfo";
-function Homepage() {
+function ResumePage() {
   return (
     <div className="HomePage">
         <header>
               <div className="Home">
-                Home Page
+                 <Link to="/">Home</Link>
               </div>
-           <div>--------------------------------------------</div>
        </header>
        <main>
           <UserInfo />
@@ -14,7 +14,8 @@ function Homepage() {
     </div>
   );
 }
-export default Homepage;
+export default ResumePage;
+
 
 
 

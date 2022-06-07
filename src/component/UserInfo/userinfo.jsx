@@ -98,8 +98,6 @@ function UserInfo() {
       doc.save(`${fName}_cv.pdf`)
     }
     
-
-
     return (
       <div className="UserInfo">
       <div>

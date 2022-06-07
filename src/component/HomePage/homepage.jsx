@@ -26,7 +26,7 @@ useEffect(() => {
                        Relevant to {RelevantData}
                   </div>
                   <div className="DownloadsStats">
-                   {downloads} Downloads Stats
+                   {downloads} people used our cv builder
                   </div>
                   <div className="GitHubRepoLink">
                        <a href="https://github.com/abedkhalaf8/resume-builder" target="_blank" rel="noopener noreferrer">

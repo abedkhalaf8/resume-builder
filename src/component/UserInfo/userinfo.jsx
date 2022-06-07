@@ -1,3 +1,5 @@
+import '../UserInfo/userinfo.css';
+
 import axios from "axios";
 import jsPDF from "jspdf";
 import { useState } from "react";
@@ -143,12 +145,16 @@ function UserInfo() {
     
     return (
       <div className="UserInfo">
-         <div className="btn1">
+        <div className="header">
+        <div className="btn1">
           <button type="button" onClick={fillTheFields}>Fill Inputs Example</button>
       </div>
       <div className="btn2">
           <button type="button" onClick={emptyTheFields}>Blank Inputs</button>
       </div>
+        </div>
+       
+      <main className="Info">
       <div>
         <label>First Name: </label>
         <input type="text" onChange={(e) => { setFname(e.target.value)}}  placeholder="Abed" value={fName}  />
@@ -178,18 +184,6 @@ function UserInfo() {
         <input type="text" onChange={(e) => setLinkedin(e.target.value)} placeholder="linkedin.com/in/example"  value={linkedin} />
       </div>
       <div>
-        <label>About Yourself: </label>
-        <input type="text" onChange={(e) => setAboutU(e.target.value)}   value={aboutU} />
-      </div>
-      <div>
-        <label>Education: </label>
-        <input type="text" onChange={(e) => setEducation(e.target.value)}   value={education} />
-      </div>
-      <div>
-        <label>Experience: </label>
-        <input type="text" onChange={(e) => setExperience(e.target.value)}   value={experience} />
-      </div>
-      <div>
         <label>Technical Skills: </label>
         <input type="text" onChange={(e) => setTechnical(e.target.value)}   value={technical} />
       </div>
@@ -201,9 +195,22 @@ function UserInfo() {
         <label>Volunteering: </label>
         <input type="text" onChange={(e) => setVolunteering(e.target.value)}  value={volunteering} />
       </div>
+      <div>
+        <label>About Yourself: </label>
+        <input type="text" onChange={(e) => setAboutU(e.target.value)}   value={aboutU} />
+      </div>
+      <div>
+        <label>Education: </label>
+        <input type="text" onChange={(e) => setEducation(e.target.value)}   value={education} />
+      </div>
+      <div>
+        <label>Experience: </label>
+        <input type="text" onChange={(e) => setExperience(e.target.value)}   value={experience} />
+      </div>
       <div className="btn">
           <button type="button" onClick={generateCV} disabled={CheckInputs()}>generate your cv</button>
       </div>
+      </main>
       </div>
     );
   }

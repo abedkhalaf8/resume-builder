@@ -1,13 +1,7 @@
 body {
     background-size: 1800px;
 
-    background-image: url(./wallpaper.jpg);
-}
-
-
-* {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
+    background-image: url(./wallpaper.jpg) ;
 }
 
 .GitHubRepoLink{
@@ -33,4 +27,24 @@ body {
     position:relative;
     text-align: center;
     top: 220px;
+}
+
+
+.NavBar {
+    overflow: hidden;
+    background-color: rgb(150, 146, 146);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    height: 70px
+
+  }
+  
+
+
+.NavBar h1{
+    text-align: center;
+}
+
+.NavBar p{
+    text-align: center;
 }

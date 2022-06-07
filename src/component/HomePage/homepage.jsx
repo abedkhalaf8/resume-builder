@@ -21,22 +21,22 @@ useEffect(() => {
 
   return (
     <div className="HomePage">
-             <header>
+             <div className="NavBar">
                   <h1>Hi-Tech Resume Builder</h1>
                   <p>Build your Hi-tech CV ChikCHAK</p>
                   <div className="ifUpToDate">
                        Relevant to {RelevantData}
-                  </div>
-                  <div className="DownloadsStats">
-                   {downloads} people used our cv builder
                   </div>
                   <div className="GitHubRepoLink">
                        <a href="https://github.com/abedkhalaf8/resume-builder" target="_blank" rel="noopener noreferrer">
                        <label class="fa fa-github" style={{fontSize:"20px"}}> Website Project</label>
                        </a>
                   </div>
-            </header>
+            </div>
             <main>
+                   <div className="DownloadsStats">
+                   {downloads} people used our cv builder
+                  </div>
                    <div className="EnterResumePage">
                       <Link to="/ResumePage" className="ResumePage">ResumePage</Link>
                    </div>

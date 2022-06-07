@@ -1,3 +1,4 @@
+// import API from '../Api/api/DownloadsStats'
 import jsPDF from "jspdf";
 import { useState } from "react";
 
@@ -22,6 +23,7 @@ function UserInfo() {
     const [technical, setTechnical] = useState('');
     const [languages, setLanguages] = useState('');
     const [volunteering, setVolunteering] = useState('');
+     
 
     const CheckInputs = () => {
       let notEmpty = 0;

@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import HomePage from './HomePage/homepage';
 import ResumePage from './ResumePage/resumepage';
 
@@ -15,4 +14,5 @@ function App() {
 }
 
 export default App;
+
 

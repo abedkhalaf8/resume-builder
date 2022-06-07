@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 function HomePage() {
 const RelevantData = '2022';
   return (

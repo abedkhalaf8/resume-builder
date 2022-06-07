@@ -3,18 +3,14 @@ function Homepage() {
   return (
     <div className="HomePage">
         <header>
-            <h1>Tech CV Builder</h1>
-            {/* //& after i finish the important things */}
-            <div className="DownloadsStats">
-              Downloads Stats
-            </div>
-             {/* //& after i finish the important things */}
-            <div className="AboutPage">
-              About
+            <div className="Home">
+              Home Page
             </div>
             <div>--------------------------------------------</div>
+            </header>
+            <main>
             <UserInfo />
-        </header>
+            </main>
     </div>
   );
 }

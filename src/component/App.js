@@ -1,3 +1,4 @@
+import HomePage from './HomePage/homepage';
 import ResumePage from './ResumePage/resumepage'
 
 //& add routes for the pages 
@@ -5,6 +6,7 @@ function App() {
   return (
     <div className="App">
          <ResumePage />
+         {/* <HomePage /> */}
     </div>
   );
 }

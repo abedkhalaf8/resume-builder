@@ -18,9 +18,9 @@ i tried to make it easier and faster for those who want to apply for tech jobs. 
 6_ add testing <br />
 
 
-**Technologies:**
+**Technologies:** <br />
 1_ReactJS <br />
  
  
-**Netlify Link For the project**
+**Netlify Link For the project** <br />
 [Resume Cv Builder](https://resume-cv-builder.netlify.app/)

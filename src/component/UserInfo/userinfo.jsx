@@ -1,4 +1,4 @@
-// import API from '../Api/api/DownloadsStats'
+import axios from "axios";
 import jsPDF from "jspdf";
 import { useState } from "react";
 
@@ -17,7 +17,18 @@ function UserInfo() {
     const [languages, setLanguages] = useState('');
     const [volunteering, setVolunteering] = useState('');
      
-
+    const updateStats = async () => {
+      const getdata = await axios.get(
+        `https://629e63a88b939d3dc28112e1.mockapi.io/counter`
+      );
+      let downloads = getdata.data[0].downloadstats;
+      let counter = {downloadstats: downloads + 1};
+       await axios.put(
+        `https://629e63a88b939d3dc28112e1.mockapi.io/counter/1`,
+        counter
+      );
+    }
+    
     const CheckInputs = () => {
       let notEmpty = 0;
           if(fName !== ''){notEmpty++};
@@ -41,6 +52,7 @@ function UserInfo() {
       }
 
       const generateCV = () => {
+      updateStats();
       const doc = new jsPDF();
       // header title
       doc.setFontSize(13);

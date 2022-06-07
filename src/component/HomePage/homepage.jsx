@@ -1,3 +1,5 @@
+import './homepage.css';
+
 import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
@@ -36,7 +38,7 @@ useEffect(() => {
             </header>
             <main>
                    <div className="EnterResumePage">
-                      <Link to="/ResumePage">ResumePage</Link>
+                      <Link to="/ResumePage" className="ResumePage">ResumePage</Link>
                    </div>
             </main>
     </div>

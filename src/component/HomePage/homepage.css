@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(73, 190, 236);
+}
+
+
+* {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.GitHubRepoLink{
+    position:absolute;
+    right: 16px;
+    top: 20px;
+}
+
+
+.EnterResumePage{
+    position:relative;
+    text-align: center;
+    top: 250px;
+    border-style: groove;
+    width: 20px;
+}
+
+.ResumePage:link {
+    text-decoration: none;
+  }
+  
+.DownloadsStats{
+    position:relative;
+    text-align: center;
+    top: 220px;
+}

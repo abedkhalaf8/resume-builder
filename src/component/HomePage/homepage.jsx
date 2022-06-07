@@ -1,6 +1,22 @@
+import { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
+import axios from "axios";
+
 function HomePage() {
 const RelevantData = '2022';
+const [downloads, setDownloads] = useState(null)
+
+useEffect(() => {
+     const updateStats = async () => {
+          const getdata = await axios.get(
+            `https://629e63a88b939d3dc28112e1.mockapi.io/counter`
+          );
+          setDownloads(getdata.data[0].downloadstats);
+        }
+        updateStats();
+   });
+
   return (
     <div className="HomePage">
              <header>
@@ -10,7 +26,7 @@ const RelevantData = '2022';
                        Relevant to {RelevantData}
                   </div>
                   <div className="DownloadsStats">
-                       Downloads Stats
+                   {downloads} Downloads Stats
                   </div>
                   <div className="GitHubRepoLink">
                        <a href="https://github.com/abedkhalaf8/resume-builder" target="_blank" rel="noopener noreferrer">

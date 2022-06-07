@@ -1,12 +1,28 @@
 .Info label {
     display: flex;
     flex-direction: column-reverse;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 18px;
+
   }
 .Info {
-    background-color: bisque;
+    border-radius: 10px;
 }
 
 .header {
       display: flex;
       
+}
+.Info input {
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: groove;
+    border-color: rgb(86, 82, 82);
+    width:230px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Info input:hover {
+    background-color: rgb(211, 252, 252);
 }

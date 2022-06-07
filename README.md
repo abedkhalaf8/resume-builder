@@ -8,7 +8,7 @@ i tried to make it easier and faster for those who want to apply for tech jobs. 
 
 
 **Things to improve if i have more time <br />
-(I worked on this project only for 2 days)** <br />
+(I worked on this project for 2 days only)** <br />
 1_ add more features into the inputs to make it more easier <br />
 (e.g. in education to take years input and descraipton about the selected subject) <br />
 2_ add perview page <br />
@@ -22,5 +22,5 @@ i tried to make it easier and faster for those who want to apply for tech jobs. 
 1_ReactJS <br />
  
  
-**lify Link For the project**
+**Netlify Link For the project**
 [Resume Cv Builder](https://resume-cv-builder.netlify.app/)

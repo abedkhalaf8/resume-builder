@@ -1,23 +1,28 @@
 body {
     background-size: 1800px;
+    background-color: #AAD1D6;
 
-    background-image: url(./wallpaper.jpg) ;
 }
-
+* {
+    font-family: 'Manrope', sans-serif;
+}
 .GitHubRepoLink{
     position:absolute;
-    right: 16px;
-    top: 20px;
+    bottom: 10px;
+    right: 20px;
 }
-
 
 .EnterResumePage{
-    position:relative;
     text-align: center;
-    top: 250px;
-    border-style: groove;
-    width: 20px;
+    position: relative;
+    top: 230px;
+    border-radius: 10px;
+    font-size: 20px;
 }
+.ResumePage{
+    color: #000000;
+}
+
 
 .ResumePage:link {
     text-decoration: none;
@@ -26,23 +31,26 @@ body {
 .DownloadsStats{
     position:relative;
     text-align: center;
-    top: 220px;
+    top: 190px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: #000000;
+    
 }
 
-
-.NavBar {
-    overflow: hidden;
-    background-color: rgb(150, 146, 146);
+.downloads-stats {
     color: white;
-    font-family: 'Raleway', sans-serif;
-    height: 70px
-
-  }
-  
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 
 
 .NavBar h1{
     text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: #FFF273;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .NavBar p{

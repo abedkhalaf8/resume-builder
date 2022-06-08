@@ -15,9 +15,13 @@ body {
 .EnterResumePage{
     text-align: center;
     position: relative;
-    top: 230px;
+    top: 220px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1.5rem;
+    border: 1px black solid;
+    width: fit-content;
+    font-style: normal;
+    padding: 0.5rem;
 }
 .ResumePage{
     color: #000000;

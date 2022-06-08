@@ -11,6 +11,7 @@
 
 .header {
       display: flex;
+      justify-content:  center;
 }
       
 
@@ -49,4 +50,24 @@
 }
 .btn button:hover {
     background-color: rgb(0, 255, 162);
+}
+
+
+.Info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .Info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .Info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

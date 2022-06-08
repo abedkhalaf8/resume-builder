@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column-reverse;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 18px;
+    margin-top: 14px;
 
   }
 .Info {
@@ -11,18 +11,42 @@
 
 .header {
       display: flex;
-      
 }
+      
+
 .Info input {
     border-radius: 5px;
     border-width: 1px;
     border-style: groove;
     border-color: rgb(86, 82, 82);
     width:230px;
-    height: 20px;
+    height: 30px;
+    text-align: center;
     background-color: rgb(255, 255, 255);
 }
 
 .Info input:hover {
     background-color: rgb(211, 252, 252);
+}
+
+.header button {
+    border-radius: 10px;
+    background-color: rgba(0, 183, 255, 0.509);
+    border-width: 0ch;
+    margin-left: 10px;
+    color: white;
+}
+
+
+.btn {
+    margin: 30px;
+}
+.btn button {
+    border-radius: 15px;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.btn button:hover {
+    background-color: rgb(0, 255, 162);
 }

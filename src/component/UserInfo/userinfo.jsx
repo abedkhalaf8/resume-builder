@@ -147,7 +147,7 @@ function UserInfo() {
       <div className="UserInfo">
         <div className="header">
         <div className="btn1">
-          <button type="button" onClick={fillTheFields}>Fill Inputs Example</button>
+          <button type="button" onClick={fillTheFields}>Fill Inputs for Example</button>
       </div>
       <div className="btn2">
           <button type="button" onClick={emptyTheFields}>Blank Inputs</button>
@@ -208,7 +208,7 @@ function UserInfo() {
         <input type="text" onChange={(e) => setExperience(e.target.value)}   value={experience} />
       </div>
       <div className="btn">
-          <button type="button" onClick={generateCV} disabled={CheckInputs()}>generate your cv</button>
+          <button type="button" onClick={generateCV} disabled={CheckInputs()}>Download YOUR CV</button>
       </div>
       </main>
       </div>

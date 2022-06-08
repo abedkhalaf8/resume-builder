@@ -41,7 +41,21 @@ function UserInfo() {
      setLinkedin('https://il.linkedin.com/in/example')
      setAboutU('Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze ')
      setEducation('2021-2022: Full-Stack Bootcamp, Appleseeds.\n• An intensive 6-months, 720 hours training program that encourages self-led learning and group')
-     setExperience('2016-2021: Graphic Design')
+     setExperience( `Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     
+     
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze 
+     `)
      setTechnical('Front end: HTML5, CSS, JavaScript, ReactJs')
      setLanguages('English: Advanced| Hebrew: Fluent | Arabic: Native')
      setVolunteering('tijnse literatuur uit sinia, heeft één van de meer obscure latijnse woorden, consect');
@@ -103,43 +117,44 @@ function UserInfo() {
       doc.text(10, 50, `Linkedin: ${linkedin}`);  
 
      // introduction
-    //  doc.setFont('Lato-Regular', 'bold');
+      doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 75, "Introduction");
+      doc.setFont('Lato-Regular', 'normal');
       doc.text(10, 85, aboutU);  
       
       // education
       doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 103, "Education ");
-      doc.text(10, 113, education);  
       doc.setFont('Lato-Regular', 'normal');
+      doc.text(10, 113, education);  
 
 
       // experience
       doc.setFont('Lato-Regular', 'bold');
       doc.text(10, 127, "Experience ");
-      doc.text(10, 137, experience);  
       doc.setFont('Lato-Regular', 'normal');
+      doc.text(10, 137, experience);  
 
 
       // technical
       doc.setFont('Lato-Regular', 'bold');
-      doc.text(10, 220, "Technical ");
+      doc.text(10, 190, "Technical ");
       doc.setFont('Lato-Regular', 'normal');
-      doc.text(10, 225, technical);  
+      doc.text(10, 200, technical);  
 
 
       // languages
       doc.setFont('Lato-Regular', 'bold');
-      doc.text(10, 240, "Languages ");
+      doc.text(10, 215, "Languages ");
       doc.setFont('Lato-Regular', 'normal');
-      doc.text(10, 245, languages);  
+      doc.text(10, 225, languages);  
 
 
       // volunteering
       doc.setFont('Lato-Regular', 'bold');
-      doc.text(10, 260, "Volunteering");
+      doc.text(10, 240, "Volunteering");
       doc.setFont('Lato-Regular', 'normal');
-      doc.text(10, 265, volunteering); 
+      doc.text(10, 250, volunteering); 
       doc.save(`${fName}_cv.pdf`)
     }
     

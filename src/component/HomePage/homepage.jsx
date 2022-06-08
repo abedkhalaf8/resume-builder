@@ -34,9 +34,12 @@ useEffect(() => {
                    <div className="DownloadsStats">
                    <label className='downloads-stats'>{downloads} </label>People Used Our Resume Builder
                   </div>
-                   <div className="EnterResumePage">
-                        <Link to="/ResumePage" className="ResumePage">START BUILD YOUR RESUME</Link>
-                   </div>
+                  <div className="DivOfResumePage">
+                      <div className="EnterResumePage">
+                         <Link to="/ResumePage" className="ResumePage">START BUILD YOUR RESUME</Link>
+                     </div>
+                  </div>
+                   
             </main>
     </div>
   );

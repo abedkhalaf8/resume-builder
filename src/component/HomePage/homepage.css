@@ -33,7 +33,9 @@ body {
     font-style: italic;
 }
 
-
+.ResumePage{
+    text-align: center;
+}
 .ResumePage:link {
     text-decoration: none;
 }
@@ -66,4 +68,10 @@ body {
 
 .NavBar p{
     text-align: center;
+}
+
+
+.DivOfResumePage {
+    display: flex;
+    justify-content: center;
 }

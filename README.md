@@ -7,7 +7,7 @@ and I decided to make a website for it to save more time.  <br />
 i tried to make it easier and faster for those who want to apply for tech jobs.  <br />
 
 
-**Things to improve if i have more time <br />
+**Things to improve if i had more time <br />
 (I worked on this project for 2 days only)** <br />
 1_ add more features to the inputs to make it easier <br />
 (e.g. in education i can take years and description about the selected subject) <br />

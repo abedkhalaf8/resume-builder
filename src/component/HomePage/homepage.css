@@ -3,9 +3,7 @@ body {
     background-color: #AAD1D6;
 
 }
-* {
-    font-family: 'Manrope', sans-serif;
-}
+
 .GitHubRepoLink{
     position:absolute;
     bottom: 10px;
@@ -22,9 +20,17 @@ body {
     width: fit-content;
     font-style: normal;
     padding: 0.5rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.EnterResumePage:hover {
+    background-color: #f5aaaa2c;
+    color: black;
 }
 .ResumePage{
-    color: #000000;
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
 }
 
 
@@ -55,6 +61,7 @@ body {
     color: #FFF273;
     font-size: 50px;
     font-weight: bold;
+    
 }
 
 .NavBar p{

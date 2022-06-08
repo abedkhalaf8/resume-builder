@@ -9,5 +9,18 @@
     font-family: 'Courier New', Courier, monospace;
     color: #FFF273;  
     font-weight: bold;
-    
+
+}
+
+.page-title{
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    position: relative;
+    top: 10px;
+    color: black;
+}
+
+.page-title:link {
+    text-decoration: none;
+
 }

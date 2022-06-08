@@ -7,7 +7,7 @@ function ResumePage() {
     <div className="HomePage">
         <header>
               <div className="Home">
-                 <Link to="/" className="HomePage">Home</Link>
+                 <Link to="/" className="page-title">Home</Link>
               </div>
        </header>
        <main>

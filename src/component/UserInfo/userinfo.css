@@ -57,6 +57,7 @@
     border-radius: 15px;
     background-color: aqua;
     font-family: 'Courier New', Courier, monospace;
+    margin: 35px;
 
 }
 .btn button:hover {

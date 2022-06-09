@@ -89,3 +89,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.Info input{
+    margin-top: 4px;
+}
+
+
+.Info div{
+    margin-top: 10px;
+}

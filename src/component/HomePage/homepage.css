@@ -1,7 +1,7 @@
 body {
     background-size: 1800px;
-    background-color: #AAD1D6;
-
+    background-color: #ece8df;
+    
 }
 
 .GitHubRepoLink{
@@ -51,7 +51,7 @@ body {
 }
 
 .downloads-stats {
-    color: white;
+    color: #3343ea;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
@@ -60,10 +60,9 @@ body {
 .NavBar h1{
     text-align: center;
     font-family: 'Manrope', sans-serif;
-    color: #FFF273;
+    color: #3343ea;
     font-size: 50px;
     font-weight: bold;
-    
 }
 
 .NavBar p{

@@ -8,7 +8,6 @@ i tried to make it easier and faster for those who want to apply for tech jobs. 
 
 
 **Things to improve if i had more time <br />
-(I worked on this project for 2 days only)** <br />
 1_ add more features to the inputs to make it easier <br />
 (e.g. in education i can take years and description about the selected subject) <br />
 2_ add preview page <br />

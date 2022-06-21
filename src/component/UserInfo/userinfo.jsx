@@ -172,31 +172,31 @@ function UserInfo() {
       <main className="Info">
       <div>
         <label>First Name: </label>
-        <input type="text" onChange={(e) => { setFname(e.target.value)}}  placeholder="Abed" value={fName}  />
+        <input type="text" onChange={(e) => { setFname(e.target.value)}}  value={fName}  />
       </div>
       <div>
         <label>Last Name : </label>
-        <input type="text" onChange={(e) => setLname(e.target.value)}  placeholder="Khalaf"  value={lName} />
+        <input type="text" onChange={(e) => setLname(e.target.value)}   value={lName} />
       </div>
       <div>
         <label>Role: </label>
-        <input type="text" onChange={(e) => setRole(e.target.value)}  placeholder="Web Developer"  value={role} />
+        <input type="text" onChange={(e) => setRole(e.target.value)}   value={role} />
       </div>
       <div>
         <label>Email: </label>
-        <input type="text" onChange={(e) => setEmail(e.target.value)} placeholder="example@gmail.com"  value={email} />
+        <input type="text" onChange={(e) => setEmail(e.target.value)}   value={email} />
       </div>
       <div>
         <label>Phone: </label>
-        <input type="text" onChange={(e) => setPhone(e.target.value)}  placeholder="0500000000"  value={phone} />
+        <input type="text" onChange={(e) => setPhone(e.target.value)}  value={phone} />
       </div>
       <div>
         <label>Github Link: </label>
-        <input type="text" onChange={(e) => setGithub(e.target.value)}  placeholder="github.com/example"  value={github} />
+        <input type="text" onChange={(e) => setGithub(e.target.value)}   value={github} />
       </div>
       <div>
         <label>Linkedin Link: </label>
-        <input type="text" onChange={(e) => setLinkedin(e.target.value)} placeholder="linkedin.com/in/example"  value={linkedin} />
+        <input type="text" onChange={(e) => setLinkedin(e.target.value)}  value={linkedin} />
       </div>
       <div>
         <label>Technical Skills: </label>
@@ -204,7 +204,7 @@ function UserInfo() {
       </div>
       <div>
         <label>Languages: </label>
-        <input type="text" onChange={(e) => setLanguages(e.target.value)} placeholder="English, Arabic, Hebrew"  value={languages} />
+        <input type="text" onChange={(e) => setLanguages(e.target.value)}  value={languages} />
       </div>
       <div>
         <label>Volunteering: </label>

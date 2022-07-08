@@ -22,4 +22,4 @@ i tried to make it easier and faster for those who want to apply for tech jobs. 
  
  
 **Netlify Link For the project** <br />
-[Resume Cv Builder](https://resume-cv-builder.netlify.app/)
+[Resume Builder](https://resume-cv-builder.netlify.app/)
